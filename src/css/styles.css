@@ -39,3 +39,26 @@ body {
   color: var(--light-text-color);
   font-family: Inter-tight, sans-serif;
 }
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
