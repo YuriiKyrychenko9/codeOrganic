@@ -7,7 +7,7 @@
   font-size: 48px;
   font-weight: 600;
   line-height: 1.04;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.72px;
   text-transform: uppercase;
   width: 335px;
   margin-bottom: 20px;
@@ -24,9 +24,7 @@
   width: 335px;
   margin-bottom: 40px;
 }
-/* .reviews-list {
-  width: 335px;
-} */
+
 .reviews-item {
   display: flex;
   width: 100%;
