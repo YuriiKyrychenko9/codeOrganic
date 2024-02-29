@@ -2,7 +2,6 @@
   position: absolute;
   width: 100%;
   padding-top: 20px;
-  /* background-color: #576f35; */
 }
 
 .header {
@@ -241,5 +240,8 @@
   .nav-container {
     display: flex;
     gap: 20px;
+  }
+  .backdrop {
+    display: none;
   }
 }
