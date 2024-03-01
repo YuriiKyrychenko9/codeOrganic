@@ -73,7 +73,6 @@
 }
 .footer-span {
   margin-left: 8px;
-  margin-right: 8px;
 }
 .footer-bottom {
   display: flex;
@@ -83,6 +82,15 @@
 .footer-bottom-list {
   display: flex;
   gap: 8px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .footer-span {
+    margin-left: 0;
+  }
+  .footer-bottom-list {
+    gap: 3px;
+  }
 }
 
 @media screen and (min-width: 768px) {
