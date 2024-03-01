@@ -41,8 +41,8 @@ button {
 .how-it-work {
   background: linear-gradient(
     to bottom,
-    #7a3145 0% 44.76%,
-    #576f35 44.76% 100%
+    var(--red-background) 0% 44.76%,
+    var(--green-background) 44.76% 100%
   );
 }
 
@@ -63,9 +63,6 @@ button {
 }
 
 .container-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   width: 335px;
   height: 450px;
@@ -150,9 +147,9 @@ button {
   background-color: var(--light-text-color);
   width: 335px;
   height: 76px;
+  text-align: start;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   gap: 24px;
   counter-increment: number;
 }
@@ -187,12 +184,12 @@ button {
 }
 
 .span-work-text {
-  color: #141414;
+  color: var(--black-text-color);
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.17;
-  letter-spacing: -0.24px;
+  letter-spacing: -0.024px;
   text-transform: none;
 }
 
@@ -205,8 +202,8 @@ button {
   .how-it-work {
     background: linear-gradient(
       to bottom,
-      #7a3145 0% 54.64%,
-      #576f35 54.64% 100%
+      var(--red-background) 0% 54.64%,
+      var(--green-background) 54.64% 100%
     );
   }
   .work-image-conteiner {
@@ -265,5 +262,56 @@ button {
   .span-work-text {
     font-size: 16px;
     line-height: 1.25;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
+
+  .how-it-work {
+    background: linear-gradient(
+      to right,
+      var(--red-background) 0% 44.76%,
+      var(--green-background) 44.76% 100%
+    );
+  }
+
+  .section-main-container {
+    flex-direction: row;
+  }
+
+  .work-image-conteiner {
+    padding: 0;
+    padding-left: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 100px;
+    background-color: var(--red-background);
+  }
+
+  .work-picture {
+    width: 430px;
+    height: 559px;
+  }
+
+  .container-img {
+    width: 430px;
+    height: 559px;
+  }
+
+  .work_photo {
+    width: 430px;
+    height: 559px;
+  }
+
+  .work-conteiner {
+    background-color: var(--green-background);
+    padding-top: 100px;
+    padding-bottom: 160px;
+    padding-left: 100px;
+    padding-right: 0px;
   }
 }
