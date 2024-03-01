@@ -66,7 +66,6 @@
   border: 1px solid rgba(251, 251, 251, 0.4);
   color: var(--light-text-color);
   text-align: center;
-  font-family: 'Inter Tight';
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -97,6 +96,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 2;
   opacity: 0;
   background-color: rgba(20, 20, 20, 0.4);
   visibility: hidden;
@@ -148,7 +148,6 @@
   border-radius: 12px;
   border: 1px solid rgba(251, 251, 251, 0.4);
   color: var(--light-text-color);
-  font-family: 'Inter Tight';
   font-size: 14px;
   text-align: center;
   font-style: normal;
