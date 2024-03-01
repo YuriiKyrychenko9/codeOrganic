@@ -48,6 +48,11 @@
     display: none;
   }
 }
+@media screen and (min-width: 1280px) {
+  .reviews-item:last-child {
+    display: block;
+  }
+}
 
 .reviews-img {
   display: block;
@@ -104,9 +109,9 @@
     gap: 25px;
   }
   .reviews-title {
-    font-size: 63px;
+    font-size: 64px;
     line-height: 1;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.02em;
   }
   .reviews-text {
     font-size: 16px;
@@ -132,5 +137,10 @@
     color: rgba(20, 20, 20, 0.4);
     line-height: 1.4;
     width: 288px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .reviews-list {
+    gap: 25px;
   }
 }
