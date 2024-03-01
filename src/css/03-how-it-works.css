@@ -195,3 +195,75 @@ button {
   letter-spacing: -0.24px;
   text-transform: none;
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .how-it-work {
+    background: linear-gradient(
+      to bottom,
+      #7a3145 0% 54.64%,
+      #576f35 54.64% 100%
+    );
+  }
+  .work-image-conteiner {
+    padding: 100px 32px;
+  }
+
+  .work-picture {
+    width: 640px;
+    height: 640px;
+  }
+
+  .container-img {
+    width: 640px;
+    height: 640px;
+  }
+
+  .work_photo {
+    width: 640px;
+    height: 640px;
+  }
+
+  .work-conteiner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .work-subtitle {
+    font-size: 32px;
+    margin-bottom: 25px;
+    width: 450px;
+  }
+
+  .subtitle-span {
+    font-size: 32px;
+  }
+
+  .work-text {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 50px;
+    width: 450px;
+  }
+
+  .work-item {
+    width: 450px;
+  }
+
+  .work-item-text {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 325px;
+  }
+
+  .span-work-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
