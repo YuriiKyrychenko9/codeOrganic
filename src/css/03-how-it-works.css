@@ -55,9 +55,11 @@ button {
 
 .work-image-conteiner {
   padding: 40px 0px;
-  display: flex;
-  align-items: center;
-  background-color: var(--red-background);
+}
+
+.work-picture {
+  width: 335px;
+  height: 450px;
 }
 
 .container-img {
@@ -96,8 +98,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 auto;
-  background-color: var(--green-background);
 }
 
 .work-subtitle {
