@@ -179,7 +179,8 @@ button {
   line-height: 1.17;
   letter-spacing: -0.024px;
   text-align: start;
-  width: 208px;
+  width: 200px;
+  font-family: 'Iter Tight', sans-serif;
 }
 
 .span-work-text {
