@@ -26,24 +26,27 @@
             type="text"
             name="user-name"
             placeholder="Full Name"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
             required
           />
-          <input
-            class="modal-input valid"
-            type="email"
-            name="user-email"
-            placeholder="Email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            required
-          />
+
+          <div class="inp-wrp">
+            <input
+              class="modal-input inp"
+              type="email"
+              name="email"
+              placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid email, try again</p>
+          </div>
           <textarea
             class="modal-textarea"
             name="user-comment"
             placeholder="Comment"
             id="user-comment"
-          >
-          </textarea>
+          ></textarea>
           <button class="modal-btn" type="submit">Send</button>
           <!-- </div> -->
         </form>
