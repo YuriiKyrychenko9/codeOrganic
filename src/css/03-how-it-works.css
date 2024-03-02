@@ -39,6 +39,7 @@ button {
 }
 
 .how-it-work {
+  min-width: 320px;
   background: linear-gradient(
     to bottom,
     var(--red-background) 0% 44.76%,
@@ -58,14 +59,14 @@ button {
 }
 
 .work-picture {
-  width: 335px;
+  /* width: 335px; */
   height: 450px;
 }
 
 .container-img {
-  position: relative;
-  width: 335px;
+  /* width: 335px; */
   height: 450px;
+  position: relative;
 }
 
 .overlay {
@@ -83,7 +84,7 @@ button {
 }
 .work_photo {
   border-radius: 30px;
-  width: 335px;
+  /* max-width: 335px; */
   height: 450px;
 }
 
@@ -106,7 +107,7 @@ button {
   letter-spacing: -0.015em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  width: 335px;
+  max-width: 335px;
 }
 
 .subtitle-span {
@@ -127,7 +128,7 @@ button {
   line-height: 1.29;
   margin-bottom: 40px;
   letter-spacing: -0.02em;
-  width: 335px;
+  max-width: 335px;
 }
 
 .work-list {
@@ -142,15 +143,22 @@ button {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 24px;
+  padding-right: 27px;
   border-radius: 15px;
   background-color: var(--light-text-color);
-  width: 335px;
-  height: 76px;
   text-align: start;
   display: flex;
   align-items: center;
   gap: 24px;
   counter-increment: number;
+}
+
+.work-item:nth-child(2) {
+  padding-right: 59px;
+}
+
+.work-item:nth-child(3) {
+  padding-right: 24px;
 }
 
 .work-item::before {
@@ -164,8 +172,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   background-color: var(--red-background);
   border: 5px solid rgba(211, 190, 196, 1);
@@ -179,7 +187,6 @@ button {
   line-height: 1.17;
   letter-spacing: -0.024px;
   text-align: start;
-  width: 200px;
   font-family: 'Iter Tight', sans-serif;
 }
 
@@ -191,6 +198,24 @@ button {
   line-height: 1.17;
   letter-spacing: -0.024px;
   text-transform: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .work-item {
+    max-width: 335px;
+  }
+
+  .work-picture {
+    max-width: 335px;
+  }
+
+  .container-img {
+    max-width: 335px;
+  }
+
+  .work_photo {
+    max-width: 335px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -235,7 +260,7 @@ button {
   .work-subtitle {
     font-size: 32px;
     margin-bottom: 25px;
-    width: 450px;
+    max-width: 450px;
   }
 
   .subtitle-span {
@@ -246,17 +271,25 @@ button {
     font-size: 16px;
     line-height: 1.25;
     margin-bottom: 50px;
-    width: 450px;
+    max-width: 450px;
   }
 
   .work-item {
     width: 450px;
+    padding-right: 25px;
+  }
+
+  .work-item:nth-child(2) {
+    padding-right: 27px;
+  }
+
+  .work-item:nth-child(3) {
+    padding-right: 27px;
   }
 
   .work-item-text {
     font-size: 16px;
     line-height: 1.25;
-    width: 325px;
   }
 
   .span-work-text {
