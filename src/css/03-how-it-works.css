@@ -59,12 +59,10 @@ button {
 }
 
 .work-picture {
-  /* width: 335px; */
   height: 450px;
 }
 
 .container-img {
-  /* width: 335px; */
   height: 450px;
   position: relative;
 }
@@ -84,7 +82,6 @@ button {
 }
 .work_photo {
   border-radius: 30px;
-  /* max-width: 335px; */
   height: 450px;
 }
 
