@@ -1,0 +1,28 @@
+.advertisement {
+    background-color:#FBFBFB;
+    padding: 80px 10px;
+    width: 375px;
+    height: 469px;
+}
+
+.advertisement-text {
+color: #FBFBFB;
+font-family: Inter Tight, sans-serif;
+font-size: 48px;
+font-weight: 600;
+line-height: 0,96;
+text-align: left;
+letter-spacing: -0.015em;
+}
+
+.advertisement-span {
+    background-image: url()
+color:#141414;
+font-family: Studio Pro;
+font-size: 48px;
+font-weight: 700;
+line-height: 50px;
+letter-spacing: -0.015em;
+text-align: left;
+}
+
