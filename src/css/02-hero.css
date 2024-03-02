@@ -1,10 +1,12 @@
 .hero {
   background-color: #576f35;
+  padding-top: 100px;
 }
 
 .hero-container {
-  padding-top: 100px;
-  margin-bottom: 40px;
+  padding: 0 20px;
+  max-width: 375px;
+  margin: 0 auto 40px;
 }
 
 .hero-title {
@@ -52,10 +54,14 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero-container {
+  .hero {
     padding-top: 122px;
-    margin-bottom: 50px;
-    width: 768px;
+  }
+
+  .hero-container {
+    max-width: 768px;
+    margin: 0 auto 50px;
+    padding: 0 32px;
   }
 
   .hero-title {
@@ -99,21 +105,26 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .hero-container {
+    margin: 0 auto 50px;
+  }
+
   .hero {
     display: flex;
     gap: 28px;
     margin: 0 auto;
+    padding: 0 0 0 100px;
   }
 
   .hero-container {
-    width: 602px;
-    margin-right: 0;
-    padding-right: 0;
-    padding-top: 238px;
+    max-width: 602px;
+    margin: 0 0 0 auto;
+    padding: 238px 0 50px;
   }
 
   .hero-title {
     margin-bottom: 128px;
+    width: 502px;
   }
 
   .hero-text {
