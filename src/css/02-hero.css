@@ -32,7 +32,7 @@
     ),
     url(../img/hero/hero-mob.jpg),
     lightgray -21.701px -17.796px / 115.12% 121.468% no-repeat;
-  width: 375px;
+  max-width: 375px;
   height: 370px;
   margin: 0 auto;
   background-size: 375px 370px;
@@ -47,7 +47,7 @@
       ),
       url(../img/hero/hero-mob@2x.jpg),
       lightgray -21.701px -17.796px / 115.12% 121.468% no-repeat;
-    width: 375px;
+    max-width: 375px;
     height: 370px;
     background-size: 375px 370px;
   }
@@ -83,7 +83,7 @@
       ),
       url(../img/hero/hero-tab.jpg),
       lightgray -21.701px -17.796px / 115.12% 121.468% no-repeat;
-    width: 768px;
+    max-width: 768px;
     height: 539px;
     background-size: 768px 539px;
   }
@@ -97,7 +97,7 @@
         ),
         url(../img/hero/hero-tab@2x.jpg),
         lightgray -21.701px -17.796px / 115.12% 121.468% no-repeat;
-      width: 768px;
+      max-width: 768px;
       height: 539px;
       background-size: 768px 539px;
     }
