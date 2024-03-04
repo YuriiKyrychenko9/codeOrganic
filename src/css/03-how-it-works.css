@@ -136,6 +136,12 @@
   background-color: var(--red-background);
   border: 5px solid rgba(211, 190, 196, 1);
   flex-shrink: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-item:hover::before,
+.work-item:focus::before {
+  background-color: #622133;
 }
 
 .work-item-text {
