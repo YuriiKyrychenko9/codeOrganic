@@ -1,3 +1,7 @@
+.backdrop.is-closed {
+  display: none;
+}
+
 .top {
   position: absolute;
   width: 100%;
