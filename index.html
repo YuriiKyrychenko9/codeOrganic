@@ -16,8 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/codeOrganic/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/codeOrganic/assets/index-f1191e05.css">
+    <link rel="stylesheet" href="/codeOrganic/assets/index-6f8f58f8.css">
   </head>
   <body>
     <header class="top">
@@ -31,7 +30,12 @@
       </svg>
     </a>
 
-    <button class="btn-menu" type="button">
+    <button
+      class="btn-menu js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      type="button"
+    >
       <svg class="icon-burger" width="32" height="32">
         <use href="/codeOrganic/assets/sprite-1108547c.svg#icon-burger.svg"></use>
       </svg>
@@ -53,9 +57,10 @@
       <a class="button-header" href="#harwest">Shop now</a>
     </div>
   </div>
-  <div class="backdrop is-ope">
+
+  <div class="backdrop js-menu-container" id="mobile-menu">
     <div class="menu-mobile">
-      <button class="btn-close" type="button">
+      <button class="btn-close js-close-menu" type="button">
         <svg class="icon-close" width="32" height="32">
           <use href="/codeOrganic/assets/sprite-1108547c.svg#icon-close.svg"></use>
         </svg>
@@ -487,6 +492,12 @@
 </footer>
 
 
-    
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="main.js"></script>
   </body>
 </html>
