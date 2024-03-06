@@ -35,6 +35,10 @@
   border-radius: 40px;
   max-width: 334px;
   background-color: var(--light-text-color);
+  max-width: 334px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 250ms;
 }
 .vegetables-subtitle {
   color: var(--red-background);
@@ -52,6 +56,29 @@
   letter-spacing: 0.015em;
   text-transform: uppercase;
   margin-bottom: 14px;
+}
+.vegetables-overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 40px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--light-text-color);
+  padding: 140px 30px 30px;
+  background-color: rgb(87, 111, 53, 0.8);
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms;
+}
+.vegetables-item:hover .vegetables-overlay {
+  transform: translatey(0);
+  border: 5px solid var(--green-background);
+}
+.vegetables-item:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 768px) {
