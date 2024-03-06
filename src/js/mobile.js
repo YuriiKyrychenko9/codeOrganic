@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const sectionWork = document.querySelector('.section-work');
 
   function handleHeaderStyle() {
-    if (window.innerWidth <= 1279) {
+    if (window.innerWidth <= 4000) {
       header.style.backgroundColor = 'rgba(87, 111, 53, 0.8)';
     } else if (window.scrollY >= sectionWork.offsetTop) {
       header.style.backgroundColor = 'rgba(87, 111, 53, 0.8)';
