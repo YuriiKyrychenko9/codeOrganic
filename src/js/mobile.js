@@ -24,11 +24,11 @@ document.addEventListener('DOMContentLoaded', function () {
     backdrop.classList.remove('is-open');
   });
 
-  const header = document.querySelector('.top');
-  const sectionWork = document.querySelector('.section-work');
+  var header = document.querySelector('.top');
+  var sectionWork = document.querySelector('.how-it-work');
 
   function handleHeaderStyle() {
-    if (window.innerWidth <= 4000) {
+    if (window.innerWidth <= 1279) {
       header.style.backgroundColor = 'rgba(87, 111, 53, 0.8)';
     } else if (window.scrollY >= sectionWork.offsetTop) {
       header.style.backgroundColor = 'rgba(87, 111, 53, 0.8)';
