@@ -82,7 +82,8 @@
   border-radius: 12px;
 }
 .footer-bottom-link,
-.footer-bottom-text {
+.footer-bottom-text,
+.footer-span {
   color: rgba(251, 251, 251, 0.5);
   font-family: 'Inter Tight';
   font-size: 12px;
@@ -95,15 +96,7 @@
 .footer-bottom-link:focus {
   color: var(--light-text-color);
 }
-.footer-span {
-  color: rgba(251, 251, 251, 0.5);
-  font-family: 'Inter Tight';
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.11; /* 111.111% */
-  letter-spacing: -0.015em;
-}
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -165,7 +158,8 @@
   }
 
   .footer-bottom-link,
-  .footer-bottom-text {
+  .footer-bottom-text,
+  .footer-span {
     font-size: 18px;
     line-height: 1.1;
     letter-spacing: -0.27px;
