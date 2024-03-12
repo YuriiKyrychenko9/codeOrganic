@@ -48,10 +48,11 @@
   color: var(--green-background);
 }
 .modal-input {
+  position: relative;
   width: 100%;
   background-color: transparent;
   outline: transparent;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding: 14px 16px;
   border-radius: 30px;
   border: 1px solid rgba(20, 20, 20, 0.2);
@@ -79,18 +80,23 @@
 }
 
 .text-valid,
-.text-invalid {
+.text-invalid,
+.text-invalid-name,
+.text-valid-name {
+  position: absolute;
   font-size: 14px;
   padding-left: 16px;
-  margin-top: -11px;
+  margin-top: -22px;
   display: none;
 }
 
-.text-valid {
+.text-valid,
+.text-valid-name {
   color: #3cbc81;
 }
 
-.text-invalid {
+.text-invalid,
+.text-invalid-name {
   color: #e74a3b;
 }
 
@@ -99,6 +105,14 @@
 }
 
 .inp:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
+
+.inp:not(:placeholder-shown):invalid ~ .text-invalid-name {
+  display: block;
+}
+
+.inp:not(:placeholder-shown):valid ~ .text-valid-name {
   display: block;
 }
 
@@ -195,10 +209,13 @@
 }
 
 .order-link {
+  display: inline-block;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.08;
   letter-spacing: -0.015em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-slash {
@@ -294,7 +311,6 @@
 
   .order-link {
     font-size: 32px;
-    line-height: 1;
   }
 
   .order-slash {
@@ -335,7 +351,8 @@
     width: 429px;
   }
 
-  .modal-btn:hover {
+  .modal-btn:hover,
+  .modal-btn:focus {
     background-color: #485f2b;
   }
 
@@ -349,6 +366,13 @@
 
   .your-order-img {
     width: 427px;
+  }
+
+  .order-link:hover,
+  .order-link:focus {
+    background-color: var(--light-text-color);
+    color: var(--green-background);
+    border-radius: 12px;
   }
 }
 
