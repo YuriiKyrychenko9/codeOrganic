@@ -20,13 +20,18 @@
             <span class="modal-accent-second">the form</span> below and we will
             contact you !
           </p>
-          <input
-            class="modal-input"
-            type="text"
-            name="user-name"
-            placeholder="Full Name"
-            required
-          />
+          <div class="inp-un">
+            <input
+              class="modal-input inp"
+              type="text"
+              name="user-name"
+              placeholder="Full Name"
+              pattern="^[a-zA-Z]+ [a-zA-Z]+$"
+              required
+            />
+            <p class="text-valid-name">Succes!</p>
+            <p class="text-invalid-name">Invalid name, try again</p>
+          </div>
 
           <div class="inp-wrp">
             <input
@@ -95,7 +100,7 @@
             >
             <span class="order-slash">/</span>
           </li>
-          <li>
+          <li class="order-item">
             <a
               class="order-link"
               href="https://www.facebook.com/goITclub/ "
@@ -104,7 +109,7 @@
             >
             <span class="order-slash">/</span>
           </li>
-          <li>
+          <li class="order-item">
             <a
               class="order-link"
               href="https://www.youtube.com/c/GoIT "
